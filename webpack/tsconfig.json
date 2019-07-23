@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"outDir": "../dist/",
+		"sourceMap": true,
+		"noImplicitReturns": true,
+		"strict": true,
+		"module": "es2015",
+		"moduleResolution": "node",
+		"target": "es5",
+		"jsx": "react",
+		"allowJs": true
+	},
+	"references": [],
+    "include": [
+        "../src/**/*"
+    ],
+    "exclude": [
+    	"../node_modules",
+    	"./node_modules"
+    ]
+}

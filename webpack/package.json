@@ -1,0 +1,41 @@
+{
+    "scripts": {
+        "start-dev-server": "webpack-dev-server --config webpack.dev.js --progress",
+        "start-production-server": "webpack-dev-server --config webpack.dev.js --progress",
+        "dev-build": "webpack --config webpack.dev.js --progress --hide-modules",
+        "watch-dev-build": "webpack --config webpack.dev.js --progress --watch",
+        "production-build": "webpack --config webpack.production.js --progress",
+        "watch-production-build": "webpack --config webpack.production.js --progress --watch",
+        "analyze-build": "webpack --config webpack.analyze.js --progress"
+    },
+    "dependencies": {
+        "@babel/core": "^7.4.5",
+        "@babel/preset-env": "^7.4.5",
+        "babel-loader": "^8.0.6",
+        "clean-webpack-plugin": "^3.0.0",
+        "compression-webpack-plugin": "^3.0.0",
+        "css-loader": "^3.0.0",
+        "html-webpack-plugin": "^3.2.0",
+        "less": "^3.9.0",
+        "less-loader": "^5.0.0",
+        "lodash": "^4.17.11",
+        "mini-css-extract-plugin": "^0.7.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.3",
+        "sass-loader": "^7.1.0",
+        "ts-loader": "^6.0.4",
+        "typescript": "^3.5.2",
+        "uglifyjs-webpack-plugin": "^2.1.3",
+        "url-loader": "^2.0.1",
+        "vue-loader": "^15.7.0",
+        "vue-template-compiler": "^2.6.10",
+        "webpack": "^4.35.0",
+        "webpack-bundle-analyzer": "^3.3.2",
+        "webpack-cli": "^3.3.5",
+        "webpack-dev-server": "^3.7.2"
+    },
+    "sideEffects": [
+        "*.css",
+        "*.scss",
+        "*.less"
+    ]
+}
