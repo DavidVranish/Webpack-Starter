@@ -5,6 +5,7 @@ const js_config = [
         loader: 'babel-loader',
         options: {
           "presets": [
+                "@babel/preset-react",
                 [
                     "@babel/preset-env",
                     {
@@ -31,7 +32,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 use: js_config,
                 exclude: /node_modules/,
             },
@@ -39,6 +40,6 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.js']
+        extensions: ['.js', '.jsx']
     }
 };
