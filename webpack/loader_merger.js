@@ -1,6 +1,6 @@
 const _ = require('lodash');
 
-let loaderHandler = function (arg_obj_value, arg_src_value, arg_key, arg_object, arg_source, arg_stack) {
+let loader_merger = function (arg_obj_value, arg_src_value, arg_key, arg_object, arg_source, arg_stack) {
     if(arg_key == "rules" 
         && _.isArray(arg_obj_value) 
         && _.isArray(arg_src_value)
@@ -48,4 +48,4 @@ let loaderHandler = function (arg_obj_value, arg_src_value, arg_key, arg_object,
     }
 };
 
-module.exports = loaderHandler;
+module.exports = loader_merger;
